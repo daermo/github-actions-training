@@ -1,6 +1,5 @@
 name: GitHub Actions Demo
 on:
-    
     push:
         branches:
             - master
@@ -23,7 +22,7 @@ jobs:
             - name: Branch name
               run: echo ${{ github.ref }}
 
-            - uses: actions/checkout
+            - uses: actions/checkout@v3.3.0
 
             - name: List files
               run: ls -al
